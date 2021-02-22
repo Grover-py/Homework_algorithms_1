@@ -18,5 +18,17 @@ def is_year_leap_2(y):
     else:
         return False
 
+
 print(is_year_leap_2(2020))
 print(is_year_leap_2(2021))
+
+
+def is_year_leap_3(y):
+    if y % 4 == 0:
+        return True
+    else:
+        return False
+
+
+print(is_year_leap_3(2020))
+print(is_year_leap_3(2021))
