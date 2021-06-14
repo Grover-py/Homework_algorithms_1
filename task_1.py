@@ -1,8 +1,8 @@
-num_user = input('Введите трёхзначное число: ')
+num_1 = int(input('Введите первую цифру: '))
+num_2 = int(input('Введите вторую цифру: '))
+num_3 = int(input('Введите третью цифру: '))
 
-num_1 = int(num_user[0])
-num_2 = int(num_user[1])
-num_3 = int(num_user[2])
+sum_user = num_1 + num_2 + num_3
+composition_usr = num_1 * num_2 * num_3
 
-print(f'Сумма трёх цифр этого числа равняется: {num_1 + num_2 + num_3}')
-print(f'Произведение трёх цифр этого числа равняется: {num_1 * num_2 * num_3}')
+print(f'Сумма, Ваших, чисел равняется: {sum_user}, а произведение: {composition_usr}')

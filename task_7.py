@@ -1,3 +1,4 @@
+
 my_list = []
 
 my_list.append(float(input('Введите первую сторону треугольника: ')))
