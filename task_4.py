@@ -1,15 +1,40 @@
-def season(month):
-    season_l = ['Зима', 'Весна', 'Лето', 'Осень']
-    if month == 12 or month == 1 or month == 2:
-        return season_l[0]
-    elif 3 <= month <= 5:
-        return season_l[1]
-    elif 6 <= month <= 8:
-        return season_l[2]
-    elif 9 <= month <= 11:
-        return season_l[3]
-    else:
-        print('В году всего 12 месяцев')
+import time
+dictionary = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+              'v', 'w', 'x', 'y', 'z']
+
+int_list = []
 
 
-print(season(12))
+question = int(input('\nЧто будем генерировать? Случайное целое число (1),\n'
+                     'Случайное вещественное число (2),\n'
+                     'Случайный символ (3)\n\n'
+                     'Введи цифру, 1, 2 или 3: '))
+
+start = input('\nВведи начало диапазона: ')
+end = input('\nВведи конец диапазона: ')
+
+if question == 1:
+    start, end = int(start), int(end)
+    if end < start:
+        start, end = end, start
+    while start <= end:
+        int_list.append(start)
+        start += 1
+elif question == 2:
+    start, end = float(start), float(end)
+    if end < start:
+        start, end = end, start
+    while start <= end:
+        int_list.append(round(start, 3))
+        start += 0.05
+    if not end in int_list:
+        int_list.append(end)
+elif question == 3:
+    start, end = dictionary.index(start.lower()), dictionary.index(end.lower())
+    if end < start:
+        start, end = end, start
+    while start <= end:
+        int_list.append(dictionary[start])
+        start += 1
+
+print(int_list[int(round(time.time() % len(int_list) - 1, 0))])

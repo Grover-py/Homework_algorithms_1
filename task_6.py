@@ -1,12 +1,7 @@
-def is_prime(x):
-    my_list = []
-    for el in range(2, x // 2 + 1):
-        if x % el == 0:
-            my_list.append(el)
-    if len(my_list) == 0:
-        return True
-    else:
-        return False
+dictionary = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+              'v', 'w', 'x', 'y', 'z']
 
+num_user = int(input('Введите номер буквы в алфавите: '))
+letter_user = dictionary[num_user - 1]
 
-print(is_prime(997))
+print(f'Под номером: {num_user}, в алфивите находится буква: {letter_user}')

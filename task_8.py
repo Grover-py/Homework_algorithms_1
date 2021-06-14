@@ -1,24 +1,9 @@
-def XOR_cipher(content, cipher):
-    data = ''
-    for el in str(content):
-        el_sh = ord(el) + ord(str(cipher))
-        if el_sh > 1114111:
-            el_sh -= 1114111
-        data = data + str(chr(el_sh))
-    return data
+year_user = int(input('Введите год: '))
 
-
-def XOR_uncipher(content, cipher):
-    data = ''
-    for el in str(content):
-        el_sh = ord(el) - ord(str(cipher))
-        if el_sh < 1:
-            el_sh += 1114111
-        data = data + chr(el_sh)
-    return data
-
-
-x = XOR_cipher('Hello World!', 5)
-print(x)
-y = XOR_uncipher(x, 5)
-print(y)
+if year_user % 4 == 0:
+    if year_user % 100 == 0 and year_user % 400 != 0:
+        print('Год НЕ является високосным')
+    else:
+        print('Год является високосным')
+else:
+    print('Год НЕ является високосным')
