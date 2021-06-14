@@ -13,3 +13,4 @@ print(bin(5 >> 2))
 print(int(bin(5 >> 2), 2))
 print(bin(5 << 2))
 print(int(bin(5 << 2), 2))
+

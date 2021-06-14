@@ -7,3 +7,4 @@ composition_usr = num_1 * num_2 * num_3
 
 print(f'Сумма, Ваших, чисел равняется: {sum_user}, а произведение: {composition_usr}')
 
+

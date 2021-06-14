@@ -5,3 +5,4 @@ num_user = int(input('Введите номер буквы в алфавите: 
 letter_user = dictionary[num_user - 1]
 
 print(f'Под номером: {num_user}, в алфивите находится буква: {letter_user}')
+

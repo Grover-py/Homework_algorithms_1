@@ -11,3 +11,4 @@ elif num_1 < num_3 < num_2 or num_1 > num_3 > num_2:
     a = num_3
 
 print(a)
+

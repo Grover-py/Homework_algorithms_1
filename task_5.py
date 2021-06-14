@@ -10,3 +10,4 @@ interval = dictionary.index(in_letter_2) - dictionary.index(in_letter_1) - 1
 
 print(f'Первая буква алфавита стоит на месте №: {index_letter_1}, а вторая буква стоит на месте №: '
       f'{index_letter_2}, букв между ними: {interval}')
+
